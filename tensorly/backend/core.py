@@ -909,7 +909,7 @@ class Backend(object):
 
         return U, V
 
-    def partial_svd(self, matrix, n_eigenvecs=None, flip=False, random_state=None, **kwargs):
+    def partial_svd(self, matrix, n_eigenvecs=None, flip=True, random_state=None, **kwargs):
         """Computes a fast partial SVD on `matrix`
 
         If `n_eigenvecs` is specified, sparse eigendecomposition is used on
